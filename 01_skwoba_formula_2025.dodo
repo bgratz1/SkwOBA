@@ -1,5 +1,5 @@
 import delimited "\\apporto.com\dfs\WUSTL\Users\bagratz_wustl\Desktop\nasty2.csv", clear
-summarize fastball_avg_break
+summarize fastball_avg_break 
 egen z_fastballbreak_score = std(fastball_avg_break)
 
 summarize fastball_avg_speed
