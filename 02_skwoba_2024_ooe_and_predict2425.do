@@ -1,6 +1,6 @@
 import delimited "\\apporto.com\dfs\WUSTL\Users\bagratz_wustl\Desktop\comparison.csv", clear
 generate kbb = k_percent - bb_percent if year == 2024
-egen z_kbb = std(kbb) if year == 2024
+egen z_kbb = std(kbb) if year == 2024 
 egen z_poorlytopped = std(poorlytopped_percent) if year == 2024
 egen z_poorlyunder = std(poorlyunder_percent) if year == 2024
 egen z_barrel = std(barrel_batted_rate) if year == 2024
